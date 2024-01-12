@@ -1,0 +1,27 @@
+@import "../styles";
+
+.content-wrapper {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+
+  .gutter {
+    width: 1000px;
+  }
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  color: $light-primary-text;
+  background-color: black;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}
+
+.page-container {
+  box-sizing: border-box;
+  position: relative;
+  min-height: 100%;
+}
