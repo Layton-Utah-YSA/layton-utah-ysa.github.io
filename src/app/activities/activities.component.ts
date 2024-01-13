@@ -17,7 +17,8 @@ export class ActivitiesComponent {
       title: "Yoga",
       startTime: new Date(Date.now()),
       description: "    We (Brennan, Cambree, and Brian) are starting a Yoga class at 8:30pm on Thursdays at the Burton Ln. building (our normal Sunday building). We have Mary Tarbet teaching. If you want a scaleable workout to fit your level, need some REAL good stretching after the Gym or just want to check out why people rave about yoga come on over. It'll be great!\n" +
-        "    P.S. Mary is the bestest and really good at making sure there's yoga fit for every level!"
+        "    P.S. Mary is the bestest and really good at making sure there's yoga fit for every level!",
+      address: "https://www.google.com/maps/place/The+Church+of+Jesus+Christ+of+Latter-day+Saints/@41.0824453,-111.9288085,15z/data=!4m6!3m5!1s0x8753016b10915453:0x653e1aa630b6fe52!8m2!3d41.0895994!4d-111.9281181!16s%2Fg%2F1tnhytkh?entry=ttu"
     },
     {
       title: "Ward Temple Morning",

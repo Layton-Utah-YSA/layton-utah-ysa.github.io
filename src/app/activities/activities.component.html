@@ -8,7 +8,7 @@
   <ng-container>
     @for (activity of activities; track activity.title) {
       <div style="margin: 10px 0px;">
-        <app-activity [title]="activity.title">
+        <app-activity [title]="activity.title" [address]="activity.address">
           {{activity.description}}
         </app-activity>
       </div>

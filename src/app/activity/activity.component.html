@@ -10,6 +10,18 @@
         <ng-content></ng-content>
       </p>
     </mat-card-content>
+
+    <mat-card-footer style="margin: 5px; display: flex; justify-content: flex-end">
+      @if (address != undefined) {
+        <a mat-icon-button
+           color="primary"
+           matTooltip="Address"
+           target="_blank"
+           [href]="address">
+          <mat-icon>map</mat-icon>
+        </a>
+      }
+    </mat-card-footer>
   </mat-card>
 </article>
 
