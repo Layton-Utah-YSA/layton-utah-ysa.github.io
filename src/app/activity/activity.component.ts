@@ -1,11 +1,15 @@
 import {Component, Input} from '@angular/core';
 import {DatePipe} from "@angular/common";
+import {MatCardModule} from "@angular/material/card";
+import {DateTimePipe} from "../date-time.pipe";
 
 @Component({
   selector: 'app-activity',
   standalone: true,
   imports: [
-    DatePipe
+    DatePipe,
+    MatCardModule,
+    DateTimePipe
   ],
   templateUrl: './activity.component.html',
   styleUrl: './activity.component.scss'

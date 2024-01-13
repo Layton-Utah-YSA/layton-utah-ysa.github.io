@@ -1,26 +1,17 @@
 <div>
-  <h1>Upcoming Activities</h1>
-  <hr />
-  <h2>Below is a list of upcoming activities that are available for you.</h2>
+  <div style="text-align: center;">
+    <h1>Upcoming Activities</h1>
+    <hr />
+    <h2>Below is a list of upcoming activities that are available for you.</h2>
+  </div>
 
-  <app-activity title="Yoga">
-    We (Brennan, Cambree, and Brian) are starting a Yoga class at 8:30pm on Thursdays at the Burton Ln. building (our normal Sunday building). We have Mary Tarbet teaching. If you want a scaleable workout to fit your level, need some REAL good stretching after the Gym or just want to check out why people rave about yoga come on over. It'll be great!
-    P.S. Mary is the bestest and really good at making sure there's yoga fit for every level!
-  </app-activity>
-
-  <app-activity title="Ward Temple Morning">
-    Ward Temple Morning for Baptisms at The Bountiful Temple!
-
-    If you would like to carpool meet at the FHE church at 11:00 A.M. (There will be refreshments there and then we’ll carpool). Or you can drive separately, meet at the temple by 11:45 A.M.
-  </app-activity>
-
-  <app-activity title="Layton YSA Stake Institute">
-    Evening YSA Institute classes at Davis High seminary building each Tuesday night at 7:00pm. There are nine classes to choose from. Dinner is served after class each week at 8:00pm. Best place to be on a Tuesday night!
-
-    Address: Davis High School Seminary Building, 226 East 300 South, Kaysville
-  </app-activity>
-
-  <app-activity title="Gospel Discussion Group for 25-35 year olds">
-    The stake is now hosting a new Gospel discussion group for young adults aged 25-35 years old on Wednesdays. There are two discussion groups on the weekly Come Follow Me and on the "Green Scriptures" (the scriptures found in the hymns).
-  </app-activity>
+  <ng-container>
+    @for (activity of activities; track activity.title) {
+      <div style="margin: 10px 0px;">
+        <app-activity [title]="activity.title">
+          {{activity.description}}
+        </app-activity>
+      </div>
+    }
+  </ng-container>
 </div>

@@ -2,6 +2,8 @@ import { Component } from '@angular/core';
 import {ActivitiesComponent} from "../activities/activities.component";
 import {ActivityComponent} from "../activity/activity.component";
 import {BannerComponent} from "../banner/banner.component";
+import {ContactUsComponent} from "../contact-us/contact-us.component";
+import {GeneralInfoComponent} from "../general-info/general-info.component";
 
 @Component({
   selector: 'app-home',
@@ -9,7 +11,9 @@ import {BannerComponent} from "../banner/banner.component";
   imports: [
     ActivitiesComponent,
     ActivityComponent,
-    BannerComponent
+    BannerComponent,
+    ContactUsComponent,
+    GeneralInfoComponent
   ],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss'
