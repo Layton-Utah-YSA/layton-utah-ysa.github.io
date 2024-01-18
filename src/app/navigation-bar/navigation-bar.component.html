@@ -4,8 +4,26 @@
 
     <span style="flex: 1 1 auto;"></span>
 
-    <button mat-button routerLink="home">Home</button>
-    <button mat-button routerLink="program">Ward Program</button>
-    <button mat-button routerLink="bishopric">Meet the Bishopric</button>
+    @if (shouldShowMenu) {
+      <button mat-icon-button aria-label="Menu Icon Button" (click)="onMenuOpen()">
+        <mat-icon>menu</mat-icon>
+      </button>
+
+    } @else {
+      <button mat-button routerLink="home">Home</button>
+      <button mat-button routerLink="program">Ward Program</button>
+      <button mat-button routerLink="bishopric">Meet the Bishopric</button>
+    }
   </mat-toolbar>
+  @if (isMenuOpen) {
+    <mat-toolbar-row>
+      <a mat-button routerLink="home">Home</a>
+    </mat-toolbar-row>
+    <mat-toolbar-row>
+      <a mat-button routerLink="program">Program</a>
+    </mat-toolbar-row>
+    <mat-toolbar-row>
+      <a mat-button routerLink="bishopric">Meet the Bishopric</a>
+    </mat-toolbar-row>
+  }
 </nav>
